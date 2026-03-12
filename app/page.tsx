@@ -8,12 +8,12 @@ import ShinyText from "@/components/ShinyText";
 import ProjectCard from "@/components/ProjectCard";
 
 function HomeModel() {
-  const gltf = useGLTF("/portfolio-2026/result-optimized.glb");
+  const gltf = useGLTF("/result-optimized.glb");
 
   return <primitive object={gltf.scene} scale={1.5} />;
 }
 
-useGLTF.preload("/portfolio-2026/result-optimized.glb");
+useGLTF.preload("/result-optimized.glb");
 
 // Main Dashboard
 export default function Dashboard() {
